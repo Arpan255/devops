@@ -22,6 +22,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 		Optional<UserCredentialsEntity> user = userCredentialsDao.findByName(username);
 		System.out.println("user 2: " + user);
 		return user.map(CustomUserDetails::new)
-				.orElseThrow(() -> new UsernameNotFoundException("Username/password not valid!PLease check it..brooo"));
+				.orElseThrow(() -> new UsernameNotFoundException("Username/password not valid!PLease check it..dude"));
 	}
 }
